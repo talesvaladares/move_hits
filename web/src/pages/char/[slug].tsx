@@ -20,16 +20,22 @@ import {Container} from './styles';
 
 
 import {characteres} from '../../services/characters';
-import {movements} from '../../services/movements';
+import movements from '../../services/movements.json';
+
+type CharSelected = {
+  name: String[];
+  move: String[][];
+
+}
 
 interface CharacterProps {
   slug: string;
+  charSelected: CharSelected; 
 }
 
-export default function Character ({slug}: CharacterProps){
+export default function Character ({slug, charSelected}: CharacterProps){
 
-  const index = characteres.findIndex(char => char.name === slug);
-  const charSelected = movements[index];
+ 
 
   return (
     <>
@@ -90,8 +96,11 @@ export const  getStaticProps: GetStaticProps = async({params}) => {
 
   const {slug} = params;
 
+  const index = characteres.findIndex(char => char.name === slug);
+  const charSelected = movements[index];
+
   return {
-    props: {slug},
+    props: {slug, charSelected},
     revalidate: 1000 * 60 * 10 //10minutos
   }
 
