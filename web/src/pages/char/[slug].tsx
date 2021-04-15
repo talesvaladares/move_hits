@@ -1,8 +1,8 @@
 import {GetStaticProps, GetStaticPaths} from 'next';
 import Head from 'next/head';
-import {Header} from '../../components/Header';
-import {MovieCardItem} from '../../components/MovieCardItem';
-import { Footer } from '../../components/Footer';
+import {Header} from '../components/Header';
+import {MovieCardItem} from '../components/MovieCardItem';
+import { Footer } from '../components/Footer';
 
 
 import {

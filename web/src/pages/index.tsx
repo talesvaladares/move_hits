@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import {Header} from '../components/Header';
+import {Header} from './components/Header';
 import {Container, Content} from '../styles/pages/home';
-import {Card} from '../components/Card';
-import {Footer} from '../components/Footer';
+import {Card} from './components/Card';
+import {Footer} from './components/Footer';
 
 import characteres from '../services/characters.json';
 export default function Home (){
