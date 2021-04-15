@@ -5,7 +5,7 @@ import {Container, Content} from '../styles/pages/home';
 import {Card} from '../components/Card';
 import {Footer} from '../components/Footer';
 
-import {characteres} from '../services/characters';
+import characteres from '../services/characters.json';
 export default function Home (){
   return (
    <>

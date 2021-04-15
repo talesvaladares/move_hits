@@ -19,7 +19,7 @@ import {
 import {Container} from './styles';
 
 
-import {characteres} from '../../services/characters';
+import characteres from '../../services/characters.json';
 import movements from '../../services/movements.json';
 
 type CharSelected = {
