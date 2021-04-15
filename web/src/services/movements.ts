@@ -12,7 +12,7 @@ export const movements = [
       "Power Geyzer",
       "Triple Geyzer"
     ], 
-    "movie":[
+    "move":[
       ["baixo","baixo","diagonalBaixoTras","tras","A ou B"],
       ["frente", "baixo","diagonalBaixoFrente","B"],
       ["baixo", "diagonalBaixoTras","tras","B"],
@@ -41,7 +41,7 @@ export const movements = [
       "Tchou Reppadan",
       "Zan'ei Reppa"
     ],
-    "movie":[
+    "move":[
       ["baixo","C"," no inimígo caído"],
       ["diagonalBaixoTras", "frente", "A", " ou ", "C"],
       ["diagonalBaixoTras", "frente","C", "diagonalBaixoTras", "frente","C"],
@@ -71,7 +71,7 @@ export const movements = [
       "Tchoukaen Sempuukon",
       "Kurensatsukon"
     ],
-    "movie": [
+    "move": [
       ["baixo","C"," no inimigo caído"],
       ["(c)","tras","frente","A"],
       ["durante o Tchuudan Uchi ","tras","frente","C"],
@@ -99,7 +99,7 @@ export const movements = [
       "Dangerous Wolf",
       "Mad Sping Wolf"
     ],
-    "movie":[
+    "move":[
       ["C ao levantar"],
       ["cima","C"," no inimigo caído"],
       ["baixo","diagonalBaixoTras","tras","B ou C"],
@@ -124,7 +124,7 @@ export const movements = [
       "Ryuseiken"
 
     ],
-    "movie":[
+    "move":[
       ["frente","frente","A"],
       ["frente","frente","frente","A"],
       ["baixo","diagonalBaixoFrente","frente","A ou C"],
@@ -148,7 +148,7 @@ export const movements = [
       "Deijinken",
       "Shukumeiken"
     ],
-    "movie": [
+    "move": [
       ["frente","frente","A"],
       ["baixo","diagonalBaixoFrente","frente","A ou C"],
       ["frente","baixo","diagonalBaixoFrente","A ou C"],
@@ -175,7 +175,7 @@ export const movements = [
       "Rolling Punisher",
       "Diving Punisher"
     ],
-    "movie": [
+    "move": [
       ["baixo","C no inimigo caído"],
       ["baixo","diagonalBaixoFrente","frente","A ou C"],
       ["no ar ","baixo","diagonalBaixoTras","tras","A"],
@@ -205,7 +205,7 @@ export const movements = [
       "Final Omega Shot",
       "Armageddon Buster"
     ],
-    "movie": [
+    "move": [
       ["C ao levantar"],
       ["baixo", "diagonalBaixoTras","tras"," A ou C"],
       ["(c)","tras","frente","B","(","frente","tras","B para um Quick Step)"],
@@ -238,7 +238,7 @@ export const movements = [
       "Raising Storm",
       "Thunder Break"
     ],
-    "movie":[
+    "move":[
       ["baixo","C no inimigo caído"],
       ["de perto ","diagonalBaixoTras","C"," (+ ","diagonalCimaFrente", "C para um Zetsumeijime)"],
       ["baixo","diagonalBaixoTras","tras"," A"],
@@ -264,7 +264,7 @@ export const movements = [
       "Bakuhatsu Goro",
       "Cadentza Storm"
     ],
-    "movie": [
+    "move": [
       ["baixo"," C no inimigo caído"],
       ["tras","diagonalBaixoTras","tras","diagonalBaixoFrente","frente"," C"],
       ["tras","diagonalBaixoTras","tras","diagonalBaixoFrente","frente"," C no ar"],
@@ -290,7 +290,7 @@ export const movements = [
       "Screw Upper",
       "Slide Screw"
     ],
-    "movie": [
+    "move": [
       ["diagonalBaixoTras","frente"," B ou C"],
       ["baixo","diagonalBaixoTras","tras"," B"],
       ["frente","baixo","diagonalBaixoFrente"," B"],
@@ -312,7 +312,7 @@ export const movements = [
       "Houou Tembukyaku",
       "HououKyaku"
     ],
-    "movie":[
+    "move":[
       ["(c)","baixo","cima"," B, no ápice ","baixo", " B"],
       ["baixo","diagonalBaixoTras","tras"," B ou C"],
       [" no ar ","baixo"," B"],
@@ -335,7 +335,7 @@ export const movements = [
       "Super Shinobi Bati",
       "Leotard Shinobi Bati"
     ],
-    "movie": [
+    "move": [
       ["C ao levantar"],
       ["baixo", "diagonalBaixoFrente", "frente", " A"],
       ["baixo","diagonalBaixoTras","tras"," C"],
@@ -367,7 +367,7 @@ export const movements = [
       "Mary Typhoon",
       "Mary Diving Smasher"
     ],
-    "movie":[
+    "move":[
       ["baixo","cima"," C ao levantar"],
       ["cima"," C ou ","baixo"," C no inimigo caído"],
       ["baixo","diagonalBaixoTras","tras"," A", " após ", "tras"," A ou ","tras","B"],
@@ -400,7 +400,7 @@ export const movements = [
       "Ikazuti",
       "Raijin no Ibuki"
     ],
-    "movie":[
+    "move":[
       ["baixo"," C no inimigo caído"],
       ["baixo","diagonalBaixoFrente","frente", " A"],
       ["baixo","diagonalBaixoTras","tras"," A"],
@@ -430,7 +430,7 @@ export const movements = [
       "Gillotin",
       "Drill"
     ],
-    "movie": [
+    "move": [
       ["C ao levantar"],
       ["baixo"," C no inimigo caído"],
       ["baixo","diagonalBaixoTras","tras"," C"],

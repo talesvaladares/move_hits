@@ -1,4 +1,4 @@
-import {GetServerSideProps} from 'next';
+import {GetStaticProps, GetStaticPaths} from 'next';
 import Head from 'next/head';
 import {Header} from '../../components/Header';
 import {MovieCardItem} from '../../components/MovieCardItem';
@@ -40,37 +40,29 @@ export default function Character ({slug}: CharacterProps){
       <Container>
         <h2>{slug}</h2>
       {
-        charSelected.name.map((name, index) => {
+        charSelected.name.map((charName, index) => {
           return (
-            <MovieCardItem key={name}>
-              {name}:
+            <MovieCardItem key={index}>
+              {charName}:
               {
-                charSelected.movie[index].map((m, index)=> {
+                charSelected.move[index].map((m, index)=> {
                   switch(m){
                     case "tras":
                       return  <FiArrowLeft size={30} key={index}/>;
-                      break;
                     case "baixo":
                       return  <FiArrowDown size={30} key={index}/>;
-                      break;
                     case "frente":
                       return  <FiArrowRight size={30} key={index}/>;
-                      break;
                     case "cima":
                       return  <FiArrowUp size={30} key={index}/>;
-                      break;
                     case "diagonalBaixoTras":
                       return  <FiArrowDownLeft size={30} key={index}/>;
-                      break;
                     case "diagonalBaixoFrente":
                       return  <FiArrowDownRight size={30} key={index}/>;
-                      break;
                     case "diagonalCimaTras":
                       return  <FiArrowUpLeft size={30} key={index}/>;
-                      break;
                     case "diagonalCimaFrente":
                       return  <FiArrowUpRight size={30} key={index}/>;
-                      break;
                     default:
                       return m;
                   }
@@ -78,22 +70,29 @@ export default function Character ({slug}: CharacterProps){
               }            
             </MovieCardItem>
           )
-        })
-        
+        })  
       }
-      
       </Container>
       <Footer/>
     </>
     
   );
 }
-export const getServerSideProps : GetServerSideProps = async({req, params}) => {
+//usado apenas em paginas que tem carregamento dinamico
+//paginas que são tem os colchetes por volta
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+      paths: [],
+      fallback: 'blocking'
+  }
+}
+export const  getStaticProps: GetStaticProps = async({params}) => {
 
   const {slug} = params;
 
   return {
-    props: {slug}
+    props: {slug},
+    revalidate: 1000 * 60 * 10 //10minutos
   }
 
 }
