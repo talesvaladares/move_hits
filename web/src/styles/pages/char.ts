@@ -4,7 +4,19 @@ export const Container = styled.div`
 
   margin-top: 5rem;
 
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  
+`;
+
+export const Content = styled.main`
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,5 +26,4 @@ export const Container = styled.div`
     font-weight: normal;
     margin-bottom: 2rem;
   }
-  
 `;

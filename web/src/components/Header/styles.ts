@@ -5,13 +5,12 @@ import {shade} from 'polished';
 export const Container = styled.header`
 
   top:0;
-  width:100%;
   height: 5rem;
   background: var(--red);
 `;
 
 export const Content = styled.div`
-  max-width: 1120px;
+  max-width: 1110px;
   height: 5rem;
   margin: 0 auto;
   padding: 0 2rem;
