@@ -33,6 +33,12 @@ export default function Home (){
       
     </Container>
     <Footer/>
+    <script 
+      data-ad-client="ca-pub-8154433521223749" 
+      async 
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+          
+    </script>
    </>
   )
 }

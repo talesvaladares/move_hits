@@ -8,14 +8,16 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  
-  
 `;
 
 export const Content = styled.main`
+
+  height: calc(100vh);
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
+
+  margin-bottom: 5rem;
 
   display: flex;
   flex-direction: column;

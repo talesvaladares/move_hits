@@ -236,7 +236,8 @@
       "Double Shippuken",
       "Jaiken",
       "Raising Storm",
-      "Thunder Break"
+      "Thunder Break",
+      "Secret"
     ],
     "move":[
       ["baixo","C no inimigo caído"],
@@ -248,13 +249,16 @@
       ["(c)","baixo","diagonalBaixoTras","tras","C"],
       ["(c)","tras","frente"," B ou C"],
       ["diagonalBaixoTras","frente","diagonalBaixoFrente","baixo","diagonalBaixoTras","tras","diagonalBaixoFrente"," BC"],
-      ["frente","diagonalBaixoFrente","baixo"," C"]
+      ["frente","diagonalBaixoFrente","baixo"," C"],
+      ["frente","diagonalBaixoFrente","baixo","diagonalBaixoTras","tras","frente"," A",
+        " (durante um hit) ", " A B C C C B C ", "baixo","diagonalBaixoTras", "tras"," C"
+      ]
     ]
   },
   {
   
     "name": [
-      "Fiinal Nuntchaku",
+      "Final Nuntchaku",
       "Koolong no Yomi",
       "Kokuryu",
       "Denkousekka no Ti",
@@ -438,7 +442,7 @@
       ["tras","diagonalBaixoTras","baixo","diagonalBaixoFrente","frente"," B"],
       ["baxio","diagonalBaixoFrente","frente"," C (devolve magias)"],
       ["frente","diagonalBaixoTras","Frente"," A ou C"],
-      ["frente","diagonalBaixoFrente","baixo","diagonalBaixoTras","tras"," BC"],
+      ["frente","diagonalBaixoFrente","baixo","diagonalBaixoTras","frente"," BC"],
       ["360º + C(+ C repetido para mais golpes)"]
     ]
   }

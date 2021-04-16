@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-  
-  bottom:0;
-
+ 
   width: 100%;
-
   height: 5rem;
+
+  margin-top: 5rem;
+
   background: var(--red);
 
   padding-right: 5rem; 
