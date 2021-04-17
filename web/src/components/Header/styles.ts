@@ -6,6 +6,7 @@ export const Container = styled.header`
 
   top:0;
   height: 5rem;
+  min-width: 1200px;
   background: var(--red);
 `;
 

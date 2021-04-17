@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 
+  width: 1100px;
   max-width: 1100px;
   min-height: calc(100vh - 10rem);
 

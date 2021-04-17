@@ -13,7 +13,7 @@ export default function Home (){
      <title>Personagens</title>
    </Head>
     <Header/>
-    <Container>
+    {/* <Container> */}
       <Content>
         {
           characteres.map(char => {
@@ -31,7 +31,7 @@ export default function Home (){
         }
       </Content>
       
-    </Container>
+    {/* </Container> */}
     <Footer/>
     <script 
       data-ad-client="ca-pub-8154433521223749" 
