@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
 
     html,
     body {
-      /* height: 100vh; */
+      height: 100vh;
       font-family: "Roboto", sans-serif;
       text-rendering: optimizelegibility;
       -webkit-font-smoothing: antialiased;

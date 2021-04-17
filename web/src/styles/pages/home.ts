@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 
-  margin-top: 5rem;
-  margin-bottom: 5rem;
- 
+  max-width: 1100px;
+  min-height : (100% - 10rem);
+  margin: 0 auto;
+  padding: 0 2rem;
   
   display: flex;
   justify-content: center;
@@ -13,13 +14,10 @@ export const Container = styled.div`
 
 export const Content = styled.div`
 
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 2rem;
+  margin-top: 5rem;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
 
- 
 `;
