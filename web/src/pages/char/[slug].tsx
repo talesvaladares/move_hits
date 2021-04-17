@@ -16,7 +16,7 @@ import {
   FiArrowUp 
 } from 'react-icons/fi'
 
-import {Container, Content} from '../../styles/pages/char';
+import {Container} from '../../styles/pages/char';
 
 
 import characteres from '../../services/characters.json';
@@ -42,7 +42,6 @@ export default function Character ({slug, charSelected}: CharacterProps){
       </Head>
       <Header/>
       <Container>
-       <Content>
        <h2>{slug}</h2>
       {
         charSelected.name.map((charName, index) => {
@@ -77,7 +76,7 @@ export default function Character ({slug, charSelected}: CharacterProps){
           )
         })  
       }
-       </Content>
+
       </Container>
       <Footer/>
     </>
