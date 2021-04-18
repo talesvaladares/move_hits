@@ -1,23 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-
- 
-  margin: 0 auto;
-  padding: 0 2rem;
-  
-  display: flex;
-  justify-content: center;
-  
-`;
 
 export const Content = styled.div`
+  margin-top: 5rem;
 
-  max-width: 1100px;
-  min-height : (100vh - 10rem);
-
-  margin: 5rem auto;
-  padding: 2rem;
+  padding: 1rem;
 
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -26,6 +13,11 @@ export const Content = styled.div`
 
   @media(max-width:1024px){
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media(max-width:768px){
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.25rem;
   }
 
 `;

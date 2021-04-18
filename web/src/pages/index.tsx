@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import Head from 'next/head';
 import {Header} from '../components/Header';
-import {Container, Content} from '../styles/pages/home';
+import {Container} from '../styles/global'
+import {Content} from '../styles/pages/home';
 import {Card} from '../components/Card';
 import {Footer} from '../components/Footer';
 
@@ -13,7 +14,7 @@ export default function Home (){
      <title>Personagens</title>
    </Head>
     <Header/>
-    {/* <Container> */}
+    <Container>
       <Content>
         {
           characteres.map(char => {
@@ -31,7 +32,7 @@ export default function Home (){
         }
       </Content>
       
-    {/* </Container> */}
+    </Container>
     <Footer/>
     <script 
       data-ad-client="ca-pub-8154433521223749" 

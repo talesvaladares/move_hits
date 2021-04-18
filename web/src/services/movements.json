@@ -13,7 +13,7 @@
       "Triple Geyzer"
     ], 
     "move":[
-      ["baixo","baixo","diagonalBaixoTras","tras","A ou B"],
+      ["baixo","diagonalBaixoTras","tras","A ou B"],
       ["frente", "baixo","diagonalBaixoFrente","B"],
       ["baixo", "diagonalBaixoTras","tras","B"],
       ["(c)", "baixo","cima","A"],

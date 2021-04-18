@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import styled, {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
     *{
@@ -24,6 +24,7 @@ export const GlobalStyles = createGlobalStyle`
       font-family: "Roboto", sans-serif;
       text-rendering: optimizelegibility;
       -webkit-font-smoothing: antialiased;
+      overflow-x:hidden ;
     }
 
     body, input, textarea, select, button {
@@ -39,4 +40,17 @@ export const GlobalStyles = createGlobalStyle`
       color: inherit;
       text-decoration: none;
     } 
+`;
+
+export const Container = styled.main`
+  width: min(90vw, 1100px);
+  height: calc(90% - 10rem);
+
+  margin: 0 auto;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
 `;

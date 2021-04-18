@@ -22,6 +22,11 @@ export const Container = styled.div`
     border-color:#4B0082;
   }
 
+  @media(max-width:768px){
+   width: 18rem;
+   height: 18rem;
+  }
+
 `;
 
 export const Header = styled.header`
@@ -32,7 +37,10 @@ export const Header = styled.header`
   height: 80%;
 
   img {
-  
+    /* @media(max-width:768px){
+      width: 18rem;
+      width: 18rem;
+    } */
   }
 `;
 

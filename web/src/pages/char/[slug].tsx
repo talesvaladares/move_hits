@@ -1,6 +1,7 @@
 import {GetStaticProps, GetStaticPaths} from 'next';
 import Head from 'next/head';
 import {Header} from '../../components/Header';
+import {Container} from '../../styles/global';
 import {MovieCardItem} from '../../components/MovieCardItem';
 import { Footer } from '../../components/Footer';
 
@@ -16,7 +17,7 @@ import {
   FiArrowUp 
 } from 'react-icons/fi'
 
-import {Container} from '../../styles/pages/char';
+import {Title} from '../../styles/pages/char';
 
 
 import characteres from '../../services/characters.json';
@@ -42,13 +43,13 @@ export default function Character ({slug, charSelected}: CharacterProps){
       </Head>
       <Header/>
       <Container>
-       <h2>{slug}</h2>
+       <Title>{slug}</Title>
       {
-        charSelected.name.map((charName, index) => {
+        charSelected.name.map((moveName, index) => {
           return (
             <MovieCardItem key={index}>
-              {charName}:
-              {
+              <p>{moveName}:</p>
+              <span>{
                 charSelected.move[index].map((m, index)=> {
                   switch(m){
                     case "tras":
@@ -71,12 +72,11 @@ export default function Character ({slug, charSelected}: CharacterProps){
                       return m;
                   }
                 })
-              }            
+              }</span>           
             </MovieCardItem>
           )
         })  
       }
-
       </Container>
       <Footer/>
     </>
